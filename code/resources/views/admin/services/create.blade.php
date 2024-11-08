@@ -1,0 +1,181 @@
+@extends('layouts.admin_master')
+
+    @section('admin_breadcrumb_heading')
+       Services
+    @endsection('admin_breadcrumb_heading')
+
+    @section('admin_breadcrumb_links') 
+            <li><a href="{{ route("services.index") }}" >Services</a></li>
+            <li><a href="#" class="active">Add New</a></li>
+    @endsection('admin_breadcrumb_links')
+ 
+
+
+
+@section('admin_content')
+
+ <link rel="stylesheet" href="{{ URL::asset('admin/bower_components/summernote/dist/summernote.css') }}">
+
+    @include('layouts.hometabs')
+
+<form class="form-horizontal"   method="post" action="{{route('services.store')}}" enctype="multipart/form-data"> 
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel">
+            <header class="panel-heading panel-border">
+                @include('layouts.save_button')
+                @include('layouts.back_button',['back'=>route('services.index')])
+            </header>
+
+            <div class="panel-body">
+                <div class="row"> 
+                    <div class="col-md-12">
+                        
+                            {{ csrf_field() }}  
+                            
+		<div class="col-lg-12 col-md-12 col-sm-12">
+	        <div class="form-group">
+			    <label for="" class="col-lg-2 col-md-3 col-sm-12 control-label">Title *</label>
+			    <div class="col-lg-10 col-md-9 col-sm-12 {{ $errors->has('title')?'has-error':'' }}">
+			        <input   name="title" value="{{ old('title') }}"  class="form-control" id="title" placeholder="Title" type="text">
+			        			        @if($errors->has('title'))
+								    	<p class="help-block">{{ $errors->first('title') }}</p> 
+								    @endif
+			    </div>
+			</div>
+		</div>
+        <div class="col-lg-12 col-md-12 col-sm-12">
+	        <div class="form-group">
+			    <label for="" class="col-lg-2 col-md-3 col-sm-12 control-label">Slug  *</label>
+			    <div class="col-lg-10 col-md-9 col-sm-12 {{ $errors->has('slug')?'has-error':'' }}">
+			        <input   name="slug" value="{{ old('slug') }}"  class="form-control" id="slug" placeholder="Slug" type="text">
+			        			        @if($errors->has('slug'))
+								    	<p class="help-block">{{ $errors->first('slug') }}</p> 
+								    @endif
+			    </div>
+			</div>
+		</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="form-group">
+		    <label for="" class="col-lg-2 col-md-3 col-sm-12 control-label">Short Description *</label>
+		    <div class="col-lg-10 col-md-9 col-sm-12 {{ $errors->has('short')?'has-error':'' }}">
+		        <textarea   name="short"   class="form-control" id="short" >{{ old('short') }}</textarea>
+		        		        @if($errors->has('short'))
+								    	<p class="help-block">{{ $errors->first('short') }}</p> 
+								    @endif
+		    </div>
+		 
+		  
+		</div>
+	</div>
+        
+<div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="form-group">
+		    <label for="" class="col-lg-2 col-md-3 control-label">Description *</label>
+		    <div class="col-lg-10 col-sm-9 {{ $errors->has('description')?'has-error':'' }}">
+		    	<textarea   name="description"   class="form-control summernote" id="description" >{{ old('description') }}</textarea>
+		    			        @if($errors->has('description'))
+								    	<p class="help-block">{{ $errors->first('description') }}</p> 
+								    @endif
+		    </div>
+		 	 
+		  
+		</div>
+	</div>
+        
+
+        
+<div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="form-group">
+		    <label for="" class="col-lg-4 col-md-6 col-sm-12 control-label">Image *</label>
+		    <div class="col-lg-8 col-md-6 col-sm-12 {{ $errors->has('image')?'has-error':'' }}">
+		        <input   name="image" value="{{ old('image') }}"  class="form-control" id="image" placeholder="Image" type="file">
+		        		        @if($errors->has('image'))
+								    	<p class="help-block">{{ $errors->first('image') }}</p> 
+								    @endif
+		    </div>
+		    <div class="col-lg-8 col-md-6 col-sm-12">
+	        	<img height="70" src="{{ old('image') }}">  
+		    </div>
+		 	 
+		  
+		</div>
+	</div>
+
+	<div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="form-group">
+		    <label for="" class="col-lg-4 col-md-6 col-sm-12 control-label">Banner *</label>
+		    <div class="col-lg-8 col-md-6 col-sm-12 {{ $errors->has('banner')?'has-error':'' }}">
+		        <input   name="banner" value="{{ old('banner') }}"  class="form-control" id="banner" placeholder="Banner" type="file">
+		        		        @if($errors->has('banner'))
+								    	<p class="help-block">{{ $errors->first('banner') }}</p> 
+								    @endif
+		    </div>
+		    <div class="col-lg-8 col-md-6 col-sm-12">
+	        	<img height="70" src="{{ old('banner') }}">  
+		    </div>
+		 	 
+		  
+		</div>
+	</div>
+        
+<div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="form-group">
+		    <label for="" class="col-lg-4 col-md-6 col-sm-12 control-label">Status </label>
+		    <div class="col-lg-8 col-md-6 col-sm-12 {{ $errors->has('status')?'has-error':'' }}">
+		    	<select  name="status" class="form-control" id="status" >
+		        	{!! $conststatusoptions !!}
+		    		
+		    	</select>
+		    			        @if($errors->has('status'))
+								    	<p class="help-block">{{ $errors->first('status') }}</p> 
+								    @endif
+		    </div>
+		 	 
+		  
+		</div>
+	</div>
+        
+  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+@endsection('admin_content')
+@section('more_scripts')
+@parent
+
+<!-- Select2 Dependencies -->
+<link rel="stylesheet" href="{{ URL::asset('admin/bower_components/select2/dist/css/select2.min.css') }}">
+<!-- Select2 Dependencies -->
+<script src="{{ URL::asset('admin/bower_components/select2/dist/js/select2.min.js') }}"></script>
+
+<script src="{{ URL::asset('admin/bower_components/summernote/dist/summernote.js') }}"></script>
+  <script>
+
+(function($) {
+
+    'use strict';
+
+    $(".select2").select2({
+        placeholder: "Select"
+    });
+
+
+    $('.summernote').summernote({
+        height: 300,                 // set editor height
+        minHeight: null,             // set minimum height of editor
+        maxHeight: null,             // set maximum height of editor
+        focus: true                  // set focus to editable area after initializing summernote
+
+    });
+    
+})(window.jQuery);   
+
+</script>
+@endsection

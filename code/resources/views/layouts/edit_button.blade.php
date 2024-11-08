@@ -1,0 +1,1 @@
+<a disabled  class="btn btn-info btn-sm editrecordbtn @yield('edit_modal_class','editrecordbtn')"><i class="fa fa-edit"></i> Edit @yield('main_title_singular')</a>

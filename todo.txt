@@ -1,0 +1,70 @@
+Box
+
+ Box Number, qr code, status, boxtype (1 door,2 door,3 door,4 door)
+
+
+
+UPDATE `permissionmodules` SET `name` = 'Device', `key` = 'device' WHERE `permissionmodules`.`id` = 14; 
+UPDATE `permissions` SET `name` = 'View Device' WHERE `permissions`.`id` = 53
+UPDATE `permissions` SET `name` = 'Add Device' WHERE `permissions`.`id` = 54
+UPDATE `permissions` SET `name` = 'Update Device' WHERE `permissions`.`id` = 55
+UPDATE `permissions` SET `name` = 'Delete Device' WHERE `permissions`.`id` = 56 
+
+
+
+Switches infomation
+
+
+
+Share device permissions to others
+
+
+
+1) Approve self-registered customers 
+		
+2) Package details
+3) Assign devices
+
+> Signup / Login page
+
+1) Design Home page 
+
+2) Customer signup
+>  Customer Login
+>  Purchase Service
+
+>  Checkout
+>  Payment to paypal
+>  Customer Panel
+	> Display orders
+	> Update Profile
+	> Display devices 
+	> packages
+	> device actions
+
+
+Home > prices > chooseplane > checkout > paying >  Signup > confirm > payed > 
+
+order to admin > 
+> recaptcha on login and signup
+> display orders in backend 
+
+> forgot password (need test)
+> change password (need test)
+> country list + with country phone code
+> update signup page + add country + state 
+
+> add devices in backend
+
+> picture sizes
+> paypal  
+
+> devices in address grid
+> billing start manullay 
+> add link to cuustmoer panel in header 
+> price AUD ( multi currency )
+> order placement date 
+> display last updated status of order
+> device log on every device
+> generate push notification
+> device log (red , green ) red if lose of power , green if device works normal , blue color for box oopen box close 

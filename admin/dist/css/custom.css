@@ -1,0 +1,186 @@
+.academic-buttons{
+        background-color: #eee;
+    color: #cc5252;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 3px 0px;
+    padding: 10px;
+        cursor: pointer;
+}
+.section-table{
+    color: #000;
+}
+.academic-buttons:hover {
+    color: #000;
+    /* opacity: 1; */
+}
+.academic-form{
+        background-color: #eee;
+    margin: 3px 0px;
+ 
+    padding: 13px
+
+}
+.add-btn{
+        background-color: #cd5153;
+    color: #fff;
+    padding: 0px;
+        text-align: center;
+}
+.form-close-button{
+        position: absolute;
+    top: -6px;
+    right: 3px;
+    color: #cd5153;
+    font-weight: 900;
+    cursor: pointer;
+}
+.form-fields{
+    border-radius: 0px;
+    margin: 2px;
+}
+.dept-academic-form{
+    background-color: #eee;
+    margin: 6px 0px;
+    
+    padding: 13px;
+}
+.options-fields{
+    margin: 5px 0px;
+}
+.class-tr{
+    background-color: #eee;
+    border: 10px solid #fff;
+}
+.class-td{
+    float: right;
+    
+}
+.td-border{
+    border:  none!important;
+    cursor: pointer;
+}
+.td-border:hover{
+    color: #cc5252;
+}
+.box-header{
+    background-color: #edf9fd;
+    color: #cc5252;
+    
+}
+.box-panel{
+        border: 2px solid #edf9fd;
+}
+#all_class {
+    padding: 0px;
+}
+.set-class-header{
+    color: #cc5252;
+}
+.section-header{
+       
+        height: 41px;
+}
+.subject-radio-lable{
+    margin-top: 10px;
+}
+.subject-table{
+    padding: 0!important;
+}
+.set-cros{
+        margin: -15px -86px;
+}
+.form-close-button:hover{
+    color: #000;
+}
+.index-class-header{
+        font-size: 25px;
+    font-weight: bold;
+    color: #cd5153;
+        float: right
+}
+.sec_name{
+    cursor: pointer;
+}
+.sec_name:hover{
+    color: #cc5252;
+}
+#class_header{
+        margin-left: 440px;
+}
+#academic-row{
+    background-color: #fff;
+}
+#all_sections{
+    padding: 0px;
+}
+/*.modal-title {
+    color: #cd5153;
+    margin: 0;
+    line-height: 1.42857143;
+    font-weight: bold;
+}*/
+
+tbody td.action_col{
+    padding: 0px;
+}
+.action_col{
+width: 14px !important;
+}
+
+.href_link{
+   display: block;
+padding: 8px 0;
+    padding-left: 0px;
+padding-left: 8px;
+
+}
+
+.actionbtntd{
+    text-align: center;
+}
+
+
+.small_action {
+    width: 10px !important;
+    /*padding: 0 8px !important;*/
+    background: none;
+    text-align: center;
+}
+
+.customtd td
+{
+ padding: 0px !important;
+ padding-left: 5px !important; 
+ padding-right: 5px !important; 
+}
+
+.customtd td a:not(.btn){
+     display: block;
+    padding: 8px 0;
+    padding-left: 0px;
+    padding-left: 8px;
+    cursor: pointer;;
+    text-decoration: none;
+}
+
+/*.custom-datatable thead
+{background: #ddd;}*/
+
+tbody.customtd label {
+    margin-top: 5px;
+}
+
+.seprator{
+    width: 30px;
+}
+.subjects-check > label
+    {
+        display: block;
+        margin-bottom: 5px;
+    }
+    #sceondEnrollModal .get_elective_subjects.subjects-check > label
+    {
+        display: none;
+        margin-bottom: 5px;
+    }

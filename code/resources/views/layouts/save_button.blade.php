@@ -1,0 +1,1 @@
+<button type="submit" {{isset($attributes)?$attributes:''}} class="{{isset($btnclasses)?$btnclasses:''}} btn btn-info btn-sm"><i class="fa fa-save"></i> {{isset($title)?$title:'Save'}}</button>

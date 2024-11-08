@@ -1,0 +1,1 @@
+<a  href="@yield('create_route')" class="btn btn-info btn-sm"><i class="fa fa-plus"></i> Add @yield('main_title_singular')</a>

@@ -1,0 +1,120 @@
+button.search-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: 0;
+    font-size: 24px;
+    z-index: 1;
+}
+
+nav img.logo {
+    max-width: 90px;
+}
+
+footer .logo {
+    max-width: 110px;
+}
+
+footer .payment {
+    width: 130px;
+}
+
+.search-form input {
+    height: 38px;
+}
+
+#home-slider .hero-slider.owl-carousel {
+    position: initial;
+}
+
+#home-slider .hero-slider.owl-carousel .owl-dots {
+    bottom: 7rem;
+}
+
+#home-slider.hero-slider-wrapper {
+    min-height: 600px;
+}
+
+#home-slider .hero-slider .owl-slide {
+    height: 600px;
+}
+
+.btn-secondary {
+    background-color: #f1ba10;
+    color: black;
+    border: #f1ba10;
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #361a89;
+    border-color: #361a89;
+}
+
+.text-secondary {
+    color: #f1ba10 !important;
+}
+
+.text-primary {
+    color: #361a89 !important;
+}
+
+.bg-light {
+    background-color: #f7f7f7 !important;
+}
+
+.wrapper.bg-light.angled.lower-end:after,
+.wrapper.bg-light.angled.upper-end:before {
+    border-left-color: #f7f7f7;
+    border-right: 0;
+}
+
+.wrapper.angled.lower-end:after {
+    border-left-color: transparent;
+    border-left-width: 100vw;
+    border-bottom-width: 4rem;
+    bottom: -4rem;
+}
+
+footer#footer {
+    background-color: #666666;
+}
+
+#what-we-do .icon-list.bullet-bg li {
+    padding-left: 2.5rem;
+}
+
+#feature-box.icon {
+    font-size: 40px;
+}
+
+
+/** Signup Page  **/
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+
+.form-signin .checkbox {
+    font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+
+/** Signup Page **/
+
+.form-signup {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    margin: auto;
+}

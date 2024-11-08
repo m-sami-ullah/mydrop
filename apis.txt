@@ -1,0 +1,21 @@
+METHOD: POST
+http://mydrop.thewx3.com/api/auth/register/email
+Payload:  email, firstname, lastname, password
+Response: send an code on email to verify 
+
+
+METHOD: POST
+http://mydrop.thewx3.com/api/auth/register/email/verify
+Payload: email, code
+
+
+METHOD: POST
+http://mydrop.thewx3.com/api/auth/login/email
+Payload: email, password
+
+
+METHOD: GET
+http://mydrop.thewx3.com/api/boxes
+token: 
+
+
